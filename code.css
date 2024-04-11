@@ -1,0 +1,21 @@
+body{
+    background-color: azure;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    padding-top: 10vh;
+}
+form{
+    text-align: center;
+    width: 50vw;
+    background-color: bisque;
+    border-radius: 15px;
+}
+legend{
+    font-size: xx-large;
+    
+}
+label{
+    font-size: large;
+    color:brown
+}

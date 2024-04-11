@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Sign-In Sheet</legend>
+            <label for="aname" id="uaname" >Name: </label><br>
+        <input type="text" name="aname" id="aname" onblur='namechanges()'><br>
+
+        <label for="Username" id="uUsername">Preferred Username: </label><br>
+        <input type="text" name="Username" id="Username" onblur='unamechanges()'><br>
+
+        <label for="pWord" id="upWord">Password: </label><br>
+        <input type="password" name="pWord" id="pWord" onblur='pwordchanges()'><br>
+
+        <label for="email" id="uEmail">Email: </label><br>
+        <input type="email" name="email" id="email" onblur='emailchanges()'><br>
+        
+        <label for="address" id="uAddress" >Address: </label><br>
+        <input type="text" name="address" id="address" onblur='addresschanges()'><br>
+
+        <label for="interests" id="uinterests">Interest/s:</label><br>
+        <textarea name="interests" id="interests" cols="30" rows="5" onblur='interestschanges()'></textarea><br>
+
+        <label for="gender" id="ugender">Gender:</label><br>
+        <select name="gender" id="gender" onblur="genderchanges()" value=" ">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Prefer not to say.">Prefer not to say</option>
+        </select><br>
+        <br>
+       <input type="button" onclick="oreset()" value="reset">
+        <input type="button" onclick="osubmit()" value="Sign Up">
+    
+        </fieldset>
+        <fieldset>
+            <legend>Ouptut</legend>
+            <p id="outName"></p>
+            <p id="outUsername"></p>
+            <p id="outPword"></p>
+            <p id="outEmail"></p>
+            <p id="outAddress"></p>
+            <p id="outInterests"></p>
+            <p id="outGender"></p>
+        </fieldset>
+    </form>
+    <link rel="stylesheet" href="code.css">
+    <script src="code.js"></script>
+</body>
+</html>
